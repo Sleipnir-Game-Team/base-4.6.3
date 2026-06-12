@@ -59,7 +59,7 @@ func stop_sound() -> void:
 func _on_audio_finished(audio_playing): 
 	AudioManager.currently_playing_audiostreams.erase(audio_playing)
 	#if print_log == true:
-	#	Logger.debug("Tocando:\n"+str(AudioManager.currently_playing_audiostreams)+"\n - - - - - - -")
+	#	SLogger.debug("Tocando:\n"+str(AudioManager.currently_playing_audiostreams)+"\n - - - - - - -")
 
 
 func _get_configuration_warnings() -> PackedStringArray: # Manda Notificação Direto no Node:

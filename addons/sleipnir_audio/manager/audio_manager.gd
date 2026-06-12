@@ -207,11 +207,11 @@ func _create_bus_layout(buses:Array[String]) ->Error: # TBD Isso aqui é fudidam
 	#	_check_play(audio_player)
 	#if currently_playing_audiostreams.size() > max_audiostreams:
 		# se passou do numero
-		#Logger.warn("Number of AudioStreamPlayers playing at the same time passed the maximum of "+ str(max_audiostreams))
+		#SLogger.warn("Number of AudioStreamPlayers playing at the same time passed the maximum of "+ str(max_audiostreams))
 		#var stream = currently_playing_audiostreams[0] if currently_playing_audiostreams.size() != 0 else null
 		#if stream != null: 
 		#	stream.stop()    
-		#	Logger.debug("REMOVED: "+str(stream))
+		#	SLogger.debug("REMOVED: "+str(stream))
 		#	currently_playing_audiostreams.remove_at(0)
 
 
@@ -227,6 +227,6 @@ func _create_bus_layout(buses:Array[String]) ->Error: # TBD Isso aqui é fudidam
 			## se não achar nenhum retorna OK
 			#return OK
 		#_:
-			#Logger.error("regex compiling failed, aborting operation!")
+			#SLogger.error("regex compiling failed, aborting operation!")
 			#return FAILED
 #endregion

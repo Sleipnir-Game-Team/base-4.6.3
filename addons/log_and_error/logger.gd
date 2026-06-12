@@ -25,9 +25,9 @@ func debug(message: String) -> void:
 ## Por exemplo, uma variável assumiu um valor que não devia, falta de algum recurso que pode levar a erro[br]
 ## Não requer um [code]get_stack()[/code] ao ser chamado, porém pode ser usado.[br]
 ## [codeblock]
-## Logger.warn("messagem", true)
+## SLogger.warn("messagem", true)
 ## #ou
-## Logger.warn("mensagem")
+## SLogger.warn("mensagem")
 ## [/codeblock]
 func warn(message: String, print_stack: bool = false) -> void:
 	if print_stack == false:
@@ -50,7 +50,7 @@ func warn(message: String, print_stack: bool = false) -> void:
 ## Por exemplo, uma função que cuida da AI dos inimigos do nada jogando eles pra fora do mapa[br]
 ## requer um [code]get_stack()[/code] ao ser chamado.[br]
 ## [codeblock]
-## Logger.error("mensagem")
+## SLogger.error("mensagem")
 ## [/codeblock]
 func error(message: String) -> void:
 	var where_went_wrong : String
@@ -71,7 +71,7 @@ func error(message: String) -> void:
 ## Por exemplo, uma coisa que não devia dar errado de jeito nenhum dando errado[br]
 ## requer um [code]get_stack()[/code] ao ser chamado.[br]
 ## [codeblock]
-## Logger.fatal("mensagem")
+## SLogger.fatal("mensagem")
 ## [/codeblock]
 func fatal(message: String) -> void:
 	var where_went_wrong : String

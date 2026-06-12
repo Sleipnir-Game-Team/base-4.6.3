@@ -11,18 +11,18 @@ func _ready() -> void:
 ## Muda de estado no sfx
 func switch_audio_state(state_name:String,offset:int=0) ->Error:
 	if self.stream is not AudioStreamInteractive:
-		Logger.warn("stream invalid: "+str(self.stream)+
+		SLogger.warn("stream invalid: "+str(self.stream)+
 				" Can only use this method if Main Stream is of type AudioStreamInteractive")
 		return ERR_INVALID_PARAMETER
 
 	# se quiser mudar pra sessão atual, retorna
 	if current_state == state_name:
-		Logger.warn("can't switch to the same state")
+		SLogger.warn("can't switch to the same state")
 		return ERR_ALREADY_IN_USE
 	
 	# se estiver pausado ou parado, retorna
 	if (self.is_playing() == false) and (self.get_stream_paused() == false):
-		Logger.warn("can't switch to state when stopped or paused!")
+		SLogger.warn("can't switch to state when stopped or paused!")
 		return ERR_UNAVAILABLE
 	
 	self._switch_state(state_name)
