@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://53ka1brdqd3s"]
+[gd_scene format=3 uid="uid://53ka1brdqd3s"]
 
 [ext_resource type="Script" uid="uid://d0iiya4fh64h6" path="res://ui/menu/options_menu.gd" id="1_flr5y"]
 [ext_resource type="Script" uid="uid://davml8xhgm4wi" path="res://ui/menu/resolution_dropbox.gd" id="3_bvd68"]
@@ -16,7 +16,7 @@ outline_color = Color(0, 0, 0, 1)
 shadow_size = 20
 shadow_color = Color(0, 0, 0, 0.329412)
 
-[node name="OptionsMenu" type="Control"]
+[node name="OptionsMenu" type="Control" unique_id=904961021]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -26,9 +26,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_flr5y")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=123397838]
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1764293096]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -39,27 +39,27 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 150
 theme_override_constants/margin_bottom = 50
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=1202493932]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=174339667]
 layout_mode = 2
 text = "OPÇÕES"
 label_settings = SubResource("LabelSettings_4flhf")
 horizontal_alignment = 1
 
-[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=1313486205]
 custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 
-[node name="TabContainer" type="TabContainer" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+[node name="TabContainer" type="TabContainer" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=1410269533]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 50
 tab_alignment = 1
 current_tab = 0
 
-[node name="Vídeo" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer"]
+[node name="Vídeo" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer" unique_id=1335563511]
 layout_mode = 2
 theme_override_constants/margin_left = 50
 theme_override_constants/margin_top = 50
@@ -67,23 +67,23 @@ theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 metadata/_tab_index = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo" unique_id=643437755]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="resolution" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer"]
+[node name="resolution" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer" unique_id=2049727986]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="resolution_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution"]
+[node name="resolution_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution" unique_id=690236388]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_label"]
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_label" unique_id=739943111]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_label"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_label" unique_id=192075530]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -93,42 +93,42 @@ label_settings = SubResource("LabelSettings_n72c1")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Control2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_label"]
+[node name="Control2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_label" unique_id=1685848293]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="resolution_dropbox" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution"]
+[node name="resolution_dropbox" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution" unique_id=791438095]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Control3" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_dropbox"]
+[node name="Control3" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_dropbox" unique_id=2034926495]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="resolution_dropbox" type="OptionButton" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_dropbox"]
+[node name="resolution_dropbox" type="OptionButton" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_dropbox" unique_id=1740727687]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 allow_reselect = true
 script = ExtResource("3_bvd68")
 
-[node name="Control4" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_dropbox"]
+[node name="Control4" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/resolution/resolution_dropbox" unique_id=1007264449]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="window_mode" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer"]
+[node name="window_mode" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer" unique_id=363487302]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="window_mode_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode"]
+[node name="window_mode_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode" unique_id=1763644550]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_label"]
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_label" unique_id=505112034]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_label"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_label" unique_id=1352490685]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -136,19 +136,19 @@ text = "Window mode"
 label_settings = SubResource("LabelSettings_n72c1")
 horizontal_alignment = 1
 
-[node name="Control2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_label"]
+[node name="Control2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_label" unique_id=1412823364]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="window_mode_dropbox" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode"]
+[node name="window_mode_dropbox" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode" unique_id=1396521362]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Control3" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_dropbox"]
+[node name="Control3" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_dropbox" unique_id=1690773321]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="window_mode_dropbox" type="OptionButton" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_dropbox"]
+[node name="window_mode_dropbox" type="OptionButton" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_dropbox" unique_id=514895640]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
@@ -161,11 +161,11 @@ popup/item_1/id = 3
 popup/item_2/text = "Fullscreen"
 popup/item_2/id = 4
 
-[node name="Control4" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_dropbox"]
+[node name="Control4" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Vídeo/VBoxContainer/window_mode/window_mode_dropbox" unique_id=2003342691]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Áudio" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer"]
+[node name="Áudio" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer" unique_id=2111171691]
 visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 50
@@ -174,23 +174,23 @@ theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 metadata/_tab_index = 1
 
-[node name="audio_options" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio"]
+[node name="audio_options" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio" unique_id=1857460092]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="volume_master" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options"]
+[node name="volume_master" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options" unique_id=2008411119]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="volume_master_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master"]
+[node name="volume_master_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master" unique_id=940792479]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_label"]
+[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_label" unique_id=363870734]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_master_label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_label"]
+[node name="volume_master_label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_label" unique_id=25132700]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -198,19 +198,19 @@ text = "Volume Geral"
 label_settings = SubResource("LabelSettings_n72c1")
 horizontal_alignment = 1
 
-[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_label"]
+[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_label" unique_id=455538281]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_master_slider" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master"]
+[node name="volume_master_slider" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master" unique_id=1171592180]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_slider"]
+[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_slider" unique_id=1718122864]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_master_slider" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_slider"]
+[node name="volume_master_slider" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_slider" unique_id=490874960]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -219,23 +219,23 @@ min_value = -30.0
 max_value = 0.0
 tick_count = 11
 
-[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_slider"]
+[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_master/volume_master_slider" unique_id=877008298]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_music" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options"]
+[node name="volume_music" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options" unique_id=1533569861]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="volume_music_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music"]
+[node name="volume_music_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music" unique_id=401575445]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_label"]
+[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_label" unique_id=306553745]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_music_label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_label"]
+[node name="volume_music_label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_label" unique_id=2146161287]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -243,19 +243,19 @@ text = "Volume Música"
 label_settings = SubResource("LabelSettings_n72c1")
 horizontal_alignment = 1
 
-[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_label"]
+[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_label" unique_id=1248182274]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_music_slider" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music"]
+[node name="volume_music_slider" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music" unique_id=712824456]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_slider"]
+[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_slider" unique_id=1182602094]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_music_slider" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_slider"]
+[node name="volume_music_slider" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_slider" unique_id=905562933]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -264,23 +264,23 @@ min_value = -30.0
 max_value = 0.0
 tick_count = 11
 
-[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_slider"]
+[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_music/volume_music_slider" unique_id=1049438661]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_sfx" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options"]
+[node name="volume_sfx" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options" unique_id=175402530]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="volume_sfx_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx"]
+[node name="volume_sfx_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx" unique_id=545825047]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_label"]
+[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_label" unique_id=160559713]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_sfx_label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_label"]
+[node name="volume_sfx_label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_label" unique_id=510362446]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -288,19 +288,19 @@ text = "Volume SFX"
 label_settings = SubResource("LabelSettings_n72c1")
 horizontal_alignment = 1
 
-[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_label"]
+[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_label" unique_id=202454756]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_sfx_slider" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx"]
+[node name="volume_sfx_slider" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx" unique_id=307072745]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_slider"]
+[node name="C" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_slider" unique_id=1355736353]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="volume_sfx_slider" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_slider"]
+[node name="volume_sfx_slider" type="HSlider" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_slider" unique_id=736367642]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -309,23 +309,23 @@ min_value = -30.0
 max_value = 0.0
 tick_count = 11
 
-[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_slider"]
+[node name="C2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/volume_sfx/volume_sfx_slider" unique_id=367784422]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="mute" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options"]
+[node name="mute" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options" unique_id=104424282]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="mute_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute"]
+[node name="mute_label" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute" unique_id=591345734]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_label"]
+[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_label" unique_id=422610928]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_label"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_label" unique_id=1305471330]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -333,27 +333,27 @@ text = "Mute"
 label_settings = SubResource("LabelSettings_n72c1")
 horizontal_alignment = 1
 
-[node name="Control2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_label"]
+[node name="Control2" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_label" unique_id=1590293587]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="mute_check" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute"]
+[node name="mute_check" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute" unique_id=757150198]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Control3" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_check"]
+[node name="Control3" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_check" unique_id=2035296466]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="mute_checkbox" type="CheckBox" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_check"]
+[node name="mute_checkbox" type="CheckBox" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_check" unique_id=1553169293]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Control4" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_check"]
+[node name="Control4" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Áudio/audio_options/mute/mute_check" unique_id=112094960]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Controles" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer"]
+[node name="Controles" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer" unique_id=589671244]
 visible = false
 layout_mode = 2
 theme_override_constants/margin_left = 50
@@ -363,36 +363,36 @@ theme_override_constants/margin_bottom = 50
 script = ExtResource("4_5nt2n")
 metadata/_tab_index = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles" unique_id=242396002]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer" unique_id=1538998789]
 layout_mode = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer" unique_id=755040765]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="keybinding_list" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer/ScrollContainer"]
+[node name="keybinding_list" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer/ScrollContainer" unique_id=2128300020]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="input_button" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer/ScrollContainer/keybinding_list" instance=ExtResource("3_xo33c")]
+[node name="input_button" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer/ScrollContainer/keybinding_list" unique_id=963413626 instance=ExtResource("3_xo33c")]
 layout_mode = 2
 
-[node name="reset_button" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer"]
+[node name="reset_button" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/TabContainer/Controles/MarginContainer/VBoxContainer" unique_id=507577799]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 40
 text = "Resetar Controles"
 
-[node name="back" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer"]
+[node name="back" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=1941118410]
 layout_mode = 2
 alignment = 2
 
-[node name="back_button" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/back"]
+[node name="back_button" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/back" unique_id=938702964]
 custom_minimum_size = Vector2(600, 50)
 layout_mode = 2
 size_flags_horizontal = 8

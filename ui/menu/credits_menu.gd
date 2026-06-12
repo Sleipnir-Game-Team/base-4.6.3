@@ -2,9 +2,9 @@ extends Control
 
 @export var pessoas: Array[Resource]
 
-func _ready():
+func _ready() -> void:
 	for pessoa in pessoas:
-		var ficha = load("res://ui/ficha.tscn").instantiate()
+		var ficha:Node = load("res://ui/ficha.tscn").instantiate()
 		ficha.info = pessoa
 		%Grade.add_child(ficha)
 

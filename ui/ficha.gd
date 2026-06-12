@@ -2,7 +2,7 @@ extends MarginContainer
 
 @export var info: Resource
 
-func _ready():
+func _ready() -> void:
 	%Name.text = info.name
 	for function in info.function:
 		if %Function.text.to_lower() != "placeholder":

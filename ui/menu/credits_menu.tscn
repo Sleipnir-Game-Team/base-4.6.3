@@ -1,11 +1,6 @@
 [gd_scene format=3 uid="uid://cj2fderj85812"]
 
 [ext_resource type="Script" uid="uid://cl2nenhmfxo3p" path="res://ui/menu/credits_menu.gd" id="1_h4uwf"]
-[ext_resource type="Resource" uid="uid://dvrkseb41fulr" path="res://credits/Milton/milton.tres" id="3_h4uwf"]
-[ext_resource type="Resource" uid="uid://wns6r18pu0yj" path="res://credits/Neemias/neemias.tres" id="3_n0w4v"]
-[ext_resource type="Resource" uid="uid://coibb0rqkfsmr" path="res://credits/Ian/ian.tres" id="4_7wep3"]
-[ext_resource type="Resource" uid="uid://cfd4d5hr5v56d" path="res://credits/LV3TO/lv3to.tres" id="5_88kal"]
-[ext_resource type="Resource" uid="uid://b4vgnssqdmljq" path="res://credits/Megumi/megumi.tres" id="6_wlyvv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4flhf"]
 font_size = 100
@@ -21,7 +16,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_h4uwf")
-pessoas = Array[Resource]([ExtResource("3_h4uwf"), ExtResource("3_n0w4v"), ExtResource("4_7wep3"), ExtResource("5_88kal"), ExtResource("6_wlyvv")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=207799611]
 

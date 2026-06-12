@@ -70,14 +70,14 @@ func create_action_list() -> void:
 
 func format_actions() -> Dictionary:
 	var action_dict := {}
-	for item in keybinding_settings.keys():
-		match item:
+	for action:String in keybinding_settings.keys():
+		match action:
 			"pause":
-				action_dict[item] = "Pause"
+				action_dict[action] = "Pause"
 			"win":
-				action_dict[item] = "Win the game"
+				action_dict[action] = "Win the game"
 			"lose":
-				action_dict[item] = "Lose the game"
+				action_dict[action] = "Lose the game"
 	return action_dict
 
 
